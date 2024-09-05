@@ -1,0 +1,27 @@
+
+  
+.editar-perfil-card {
+    text-align: center;
+    max-width: 300px;
+    margin-top: 20px;
+    margin-left: 40%;
+  }
+  
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+label {
+    margin-bottom: 5px;
+  }
+
+.editar-perfil-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  

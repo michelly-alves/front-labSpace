@@ -1,0 +1,29 @@
+<div class="login-bg">
+
+  <div class="login-container">
+    <div>
+      <h2 style="color: #151378">LabSpace </h2>
+      <h4 style="color:#000000">CONTROLE DE LABORATORIO </h4>
+    </div>
+    
+    <div class="input-wrapper">
+      <label for="email" >Email </label>
+      <input [(ngModel)]="email" type="text" id="email" placeholder="Digite seu email" />
+      <label for="password" >Senha</label>
+      <input [(ngModel)]="password" type="password" id="password"  placeholder="Digite sua senha" />
+      <button (click)="login()">Entrar</button>
+
+      <div class="modal" *ngIf="showModal">
+        <div class="modal-content">
+          <span class="close" (click)="closeModal()">&times;</span>
+          <p>{{ loginFailMessage }}</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+  <div class="cadastro">
+    <button class="cadastro" (click)="Cadastro()">Cadastro</button>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+@font-face {
+  font-family:  'Poppins';
+  src: url('src/app/fontes/Poppins-Regular.woff2') format('woff2'),
+    url('src/app/fontes/Poppins-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'Gotham';
+  src: url('src/app/fontes/Gotham-black-webfont.woff2') format('woff2'),
+    url('src/app/fontes/Gotham-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+input {
+  width: 60%;
+  padding: 10px;
+  border: 5px solid #6CCA75;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  margin-left: 15%;
+  margin-bottom: 5%;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #F4F3F4;
+  color:#979393 ;
+  
+}
+
+input:hover {
+  border-color: #05acc9;
+  transition: 1s;
+}
+
+button:hover {
+  background-color: #05acc9;
+  transition: 1s;
+}
+
+button {
+  background-color: #6CCA75;
+  color: white;
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: 'Poppins';
+}

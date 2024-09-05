@@ -1,0 +1,26 @@
+
+<div class="home-bg">
+
+
+  <div class="navbar">
+    <app-navbar></app-navbar>
+  </div>
+  
+  <div>
+    <app-search (searchEvent)="performSearch($event)"></app-search>
+  </div>
+  <br>
+  
+<div class="evento-grid">
+  <div class="evento-card" *ngFor="let evento of competicoes">
+    <div class="evento-detalhe">
+      <div class="eventos-name">{{evento.nome }}</div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="button-container">
+  <button class="cadastrar-btn"> <a href="http://localhost:4200/evento">Cadastrar evento</a> </button>
+</div>
+</div>

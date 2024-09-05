@@ -1,0 +1,117 @@
+@font-face {
+  font-family:  'Poppins';
+  src: url('src/app/fontes/Poppins-Regular.woff2') format('woff2'),
+    url('src/app/fontes/Poppins-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'Gotham';
+  src: url('src/app/fontes/Gotham-black-webfont.woff2') format('woff2'),
+    url('src/app/fontes/Gotham-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.cadastro-container {
+  width: 80%;
+  max-width: 525px; 
+  padding: 20px; 
+  border: none;
+  border-radius: 8px;
+  font-family: 'Gotham';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  z-index: 1;
+}
+
+.cadastro-container {
+    width: 80%; 
+    max-width: 525px; 
+    padding: 20px; 
+    border: none;
+    border-radius: 8px;
+    font-family: 'Popins';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+    z-index: 1;
+    padding-left: 500px;
+    color: #545454;
+  
+}
+
+.cadastro-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.cadastro-bg::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0px; 
+  width: 400px;
+  height: 400px; 
+  background-size: cover;
+  z-index: 1;
+}
+h2 {
+  font-family: 'Gotham';
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #151378;
+  text-transform: uppercase;
+
+
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  background-color: #5454541e;
+  border-radius: 24px;
+}
+
+input[type="checkbox"]
+{
+  border-radius: 904px;
+}
+button {
+  background-color: #151378;
+  color: rgb(255, 255, 255);
+  padding: 5px 87px;
+  border: 1px solid #3f3f3fde;
+  border-radius: 24px;
+  cursor: pointer;
+  font-family: 'Gotham';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 104px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.form-container .error-message {
+  color: red;
+  margin-bottom: 10px;
+}

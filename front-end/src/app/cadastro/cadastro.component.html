@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="cadastro.component.css" />
+<div class="cadastro-bg">
+   <div class="cadastro-container">
+      <h2>Cadastre-se</h2>
+
+      <label for="fullname">Matrícula</label>
+      <input [(ngModel)]="matricula" type="text" id="fullname" name="fullname" required/>
+    
+      <label for="email">E-mail</label>
+      <input [(ngModel)]="email" type="email" id="email" name="email" required />
+    
+      <label for="password">Senha</label>
+      <input [(ngModel)]="password" type="password" id="password" name="password" required />
+    
+      <label for="confirmPassword">Confirme sua senha</label>
+      <input [(ngModel)]="confirmPassword" type="password" id="confirmPassword" name="confirmPassword" required/>
+    
+      <div>
+        <label>
+          <input [(ngModel)]="isAluno" type="checkbox" id="aluno" name="aluno" />
+          Aluno/a
+        </label>
+
+        <label>
+          <input [(ngModel)]="isProfessor" type="checkbox" id="professor" name="professor" />
+          Professor/a
+        </label>
+      </div>
+
+      <button (click)="register()">Criar conta</button>
+    </div>
+</div>

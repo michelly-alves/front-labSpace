@@ -1,0 +1,24 @@
+<div class="cadastro-evento-bg">
+  <app-navbar></app-navbar>
+  <div class="card-1">
+    <div class="cadastro-evento-container">
+      <h2>Meus evento</h2>
+      <label for="nome">Nome</label>
+      <input [(ngModel)]="nome" type="text" id="nome" name="nome" required />
+    
+      <label for="sala">Sala</label>
+      <input [(ngModel)]="sala" type="text" id="sala" name="sala" required />
+
+      <label for="horario">Horário</label>
+      <input [(ngModel)]="horario" type="datetime-local" id="horario" name="horario" required />
+
+      <label for="descricao">Descrição</label>
+      <input [(ngModel)]="descricao" type="text" id="descricao" name="descricao" required />
+  
+      <button (click)="cadastrarevento()">Cadastrar</button>
+    </div>
+  </div>
+
+</div>
+
+  
