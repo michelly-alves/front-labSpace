@@ -1,52 +1,58 @@
+
 @font-face {
-  font-family:  'Poppins';
+  font-family: 'Poppins';
   src: url('src/app/fontes/Poppins-Regular.woff2') format('woff2'),
-    url('src/app/fontes/Poppins-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-family: 'Gotham';
-  src: url('src/app/fontes/Gotham-black-webfont.woff2') format('woff2'),
-    url('src/app/fontes/Gotham-black-webfont.woff') format('woff');
+       url('src/app/fontes/Poppins-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Gotham';
+  src: url('src/app/fontes/Gotham-black-webfont.woff2') format('woff2'),
+       url('src/app/fontes/Gotham-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.search {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 10px; 
+  margin-top: 20px; 
+}
 
 
 input {
-  width: 60%;
-  padding: 10px;
-  border: 5px solid #6CCA75;
-  border-radius: 20px;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-  margin-left: 15%;
-  margin-bottom: 5%;
+  width: 200px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border: none; 
+  border-radius: 20px; 
   font-family: 'Poppins';
   font-weight: 500;
-  font-size: 16px;
-  background-color: #F4F3F4;
-  color:#979393 ;
-  
-}
-
-input:hover {
-  border-color: #05acc9;
-  transition: 1s;
-}
-
-button:hover {
-  background-color: #05acc9;
-  transition: 1s;
+  font-size: 14px;
+  background-color: #D9D9D9; 
+  color: #151378; 
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 button {
-  background-color: #6CCA75;
+  background-color: #151378; 
   color: white;
-  margin-left: 10px;
-  padding: 10px 20px;
-  border: none;
+  padding: 10px 20px; 
+  border: none; 
   border-radius: 15px;
   cursor: pointer;
   font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #585799; 
+  transition: background-color 0.3s; 
 }

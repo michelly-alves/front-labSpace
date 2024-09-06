@@ -13,6 +13,7 @@
 }
 
 body {
+  text-decoration: none;
   font-family: 'Poppins';
   margin: 0;
 }
@@ -25,6 +26,7 @@ body {
   justify-content: flex-start; 
   align-items: center; 
   background-color: #92909063;
+  text-decoration: none;
 
 }
 
@@ -33,10 +35,12 @@ body {
   display: flex;
   padding: 0;
   margin-left: auto; 
+  text-decoration: none;
 }
 
 .nav-item,button, span {
   margin: 0 10px;
+  text-decoration: none;
 }
 
 .nav-item a , button, span{ 
@@ -59,4 +63,44 @@ span{
 img{
   margin-left: 10px;
   margin-top: 10px;
+}
+
+/* Estilos gerais para a barra de navegação */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Distribui os itens entre as extremidades */
+  align-items: center; /* Alinha verticalmente no centro */
+  padding: 10px 20px; /* Espaçamento interno */
+  background-color: #fbfbfb00; /* Cor de fundo da navbar */
+}
+
+/* Estilos para o título LabSpace */
+.navbar h2 {
+  color: #151378; /* Cor azul */
+  margin: 0; /* Remove margens padrão */
+}
+
+/* Estilos para a lista de navegação */
+.nav-list {
+  list-style: none; /* Remove marcadores de lista */
+  padding: 0; /* Remove padding padrão */
+  margin: 0; /* Remove margin padrão */
+  display: flex; /* Alinha os itens horizontalmente */
+}
+
+.nav-item {
+  margin-right: 20px; /* Espaçamento entre os itens */
+}
+
+/* Estilos para os links de navegação */
+.nav-item a {
+  text-decoration: none; /* Remove sublinhado dos links */
+  color: #151378; /* Cor azul */
+  font-weight: bold; /* Deixa o texto em negrito */
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo adicional para melhorar a aparência dos links ao passar o mouse */
+.nav-item a:hover {
+  color: #0d0d0d; /* Cor escura para o hover */
 }

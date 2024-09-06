@@ -1,27 +1,30 @@
 @font-face {
-  font-family:  'Poppins';
+  font-family: 'Poppins';
   src: url('src/app/fontes/Poppins-Regular.woff2') format('woff2'),
-    url('src/app/fontes/Poppins-Regular.woff') format('woff');
+       url('src/app/fontes/Poppins-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
   font-family: 'Gotham';
   src: url('src/app/fontes/Gotham-black-webfont.woff2') format('woff2'),
-    url('src/app/fontes/Gotham-black-webfont.woff') format('woff');
+       url('src/app/fontes/Gotham-black-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
-
-body{
+body {
   font-family: 'Poppins';
 }
+
 .evento-grid, .user-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 60px; 
   justify-content: center;
   text-align: center;
-  color: rgb(0, 0, 0);
+  color: #151378; /* Ajuste a cor do texto para o tom de azul */
   margin-left: 10px;
   padding-left: 10px;
   font-family: 'Poppins';
@@ -38,12 +41,13 @@ body{
   margin-top: 50px;
   padding: 10px 40px;
   border-radius: 15px;
-  background-color: #3D8D45;
+  background-color: #151378; /* Ajuste a cor de fundo para o tom de azul */
   color: white;
   border: none;
   cursor: pointer;
   font-size: 16px;
 }
+
 .home-bg {
   position: fixed;
   top: 0;
@@ -55,14 +59,15 @@ body{
   background-repeat: no-repeat;
   overflow: hidden;
 }
-.evento-card{
-  background-color: #D3E8D8;
+
+.evento-card {
+  background-color: #D3E8D8; /* Se desejar mudar para azul, substitua por #151378 */
   border-radius: 10px;
   padding: 50px 20px;
 }
 
-a{
-   text-decoration: none;
-   color: #e4f3e7;
-   font-weight: bold;
+a {
+  text-decoration: none;
+  color: #ffffff; /* Ajuste a cor do texto do link para o tom de azul */
+  font-weight: bold;
 }
