@@ -1,27 +1,115 @@
+@font-face {
+  font-family:  'Poppins';
+  src: url('src/app/fontes/Poppins-Regular.woff2') format('woff2'),
+    url('src/app/fontes/Poppins-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'Gotham';
+  src: url('src/app/fontes/Gotham-black-webfont.woff2') format('woff2'),
+    url('src/app/fontes/Gotham-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:'Gotham';
+}
+.editar-perfil-bg {
   
+  background: url('src\assets\img\Pessoas.png');
+  background-size: cover;
+  background-position: center;
+  background-color: #fdf9f600;
+  background-size: contain; 
+  background-position: 5%;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FDF9F6; 
+}
+
 .editar-perfil-card {
-    text-align: center;
-    max-width: 300px;
-    margin-top: 20px;
-    margin-left: 40%;
-  }
-  
-.form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-  }
-  
-label {
-    margin-bottom: 5px;
-  }
+  width: 50%; 
+  max-width: 525px; 
+  padding: 20px; 
+  border: 1px solid #54545438;
+  border-radius: 20px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 30px;
+  margin: 60px auto; 
+  color: #545454;
+  background-color: #f5f5f5f1;
+  margin-right: 100px;
+}
 
-.editar-perfil-bg{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
+.editar-perfil-card h2 {
+  font-family: 'Gotham';
+  font-size: 24px;
+  font-weight: bold;
+  color: #151378;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  font-family: 'Gotham';
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #545454;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
+  border-color: #151378; 
+  outline: none; 
+}
+
+button {
+  background-color: #151378;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Gotham';
+  text-align: center;
+  width: 100%; 
+  margin-top: 10px; 
+}
+
+button:hover {
+  background-color: #0f1165; 
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+button.sair {
+  background-color: rgb(210, 43, 43);
+}

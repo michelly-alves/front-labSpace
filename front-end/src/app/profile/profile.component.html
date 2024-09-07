@@ -1,18 +1,24 @@
-<app-navbar></app-navbar>
-<div class="profile-bg"></div>
-<div class="profile-card">
-  <div class="profile-content">
 
-    <app-user-perfil></app-user-perfil>
-    <h2>Perfil</h2>
-    <div class="profile-info">
-      <label for="Matricula">Matricula: </label>
-      <label for="password">Senha: <span>••••••••</span></label>
-    </div>
-    <div class="profile-buttons">
-      <button class="editar"><a href="http://localhost:4200/editar-perfil">Editar perfil</a></button>
-      <button class="excluir"><a href="http://localhost:4200/excluir-conta">Excluir Conta</a></button>
-      <button class="sair" (click)="limparLocalStorage()">Sair</button>
+<div class="profile-bg">
+  <app-navbar></app-navbar>
+    <div class="profile-card">
+      <div class="profile-content">
+         <h2>Perfil</h2>
+
+        <div class="profile-info">
+          <label for="Matricula">Matrícula: </label>
+          <span>{{ matricula }}</span>
+
+          <label for="password">Senha: </label>
+          <span>{{ senha }}</span> 
+        </div>
+
+        <div class="profile-buttons">
+          <button class="editar"><a href="http://localhost:4200/editar-perfil">Editar perfil</a></button>
+          <!-- <button class="excluir"><a href="http://localhost:4200/excluir-conta">Excluir Conta</a></button> -->
+          <button id="sair" (click)="limparLocalStorage()">Sair</button>
+        </div>
+
+      </div>
     </div>
   </div>
-</div>

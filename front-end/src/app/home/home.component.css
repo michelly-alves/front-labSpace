@@ -24,7 +24,7 @@ body {
   gap: 60px; 
   justify-content: center;
   text-align: center;
-  color: #151378; /* Ajuste a cor do texto para o tom de azul */
+  color: #151378;  
   margin-left: 10px;
   padding-left: 10px;
   font-family: 'Poppins';
@@ -41,7 +41,7 @@ body {
   margin-top: 50px;
   padding: 10px 40px;
   border-radius: 15px;
-  background-color: #151378; /* Ajuste a cor de fundo para o tom de azul */
+  background-color: #151378;  
   color: white;
   border: none;
   cursor: pointer;
@@ -61,13 +61,12 @@ body {
 }
 
 .evento-card {
-  background-color: #D3E8D8; /* Se desejar mudar para azul, substitua por #151378 */
-  border-radius: 10px;
+  background-color: #D3E8D8;  
   padding: 50px 20px;
 }
 
 a {
   text-decoration: none;
-  color: #ffffff; /* Ajuste a cor do texto do link para o tom de azul */
+  color: #ffffff;  
   font-weight: bold;
 }

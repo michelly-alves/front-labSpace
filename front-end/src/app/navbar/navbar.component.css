@@ -14,7 +14,7 @@
 
 body {
   text-decoration: none;
-  font-family: 'Poppins';
+  font-family: 'Gotham';
   margin: 0;
 }
 
@@ -46,9 +46,9 @@ body {
 .nav-item a , button, span{ 
   text-decoration: none;
   color: #000000;
-  font-family: 'Poppins';
+  font-family: 'Gotham';
   font-size: 19px;
-  font-weight: 500;
+  font-weight: 200;
   line-height: 33px;
   letter-spacing: 0em;
   text-align: left;
@@ -65,42 +65,43 @@ img{
   margin-top: 10px;
 }
 
-/* Estilos gerais para a barra de navegação */
+
 .navbar {
   display: flex;
-  justify-content: space-between; /* Distribui os itens entre as extremidades */
-  align-items: center; /* Alinha verticalmente no centro */
-  padding: 10px 20px; /* Espaçamento interno */
-  background-color: #fbfbfb00; /* Cor de fundo da navbar */
+  justify-content: space-between;
+  align-items: center; 
+  padding: 10px 20px; 
+  background-color: #fbfbfb00;
+  
 }
 
-/* Estilos para o título LabSpace */
+
 .navbar h2 {
-  color: #151378; /* Cor azul */
-  margin: 0; /* Remove margens padrão */
+  color: #151378;
+  margin: 0;
+  font-family: 'Gotham';
 }
 
-/* Estilos para a lista de navegação */
+
 .nav-list {
-  list-style: none; /* Remove marcadores de lista */
-  padding: 0; /* Remove padding padrão */
-  margin: 0; /* Remove margin padrão */
-  display: flex; /* Alinha os itens horizontalmente */
+  list-style: none;  
+  padding: 0;  
+  margin: 0; 
+  display: flex;  
 }
 
 .nav-item {
-  margin-right: 20px; /* Espaçamento entre os itens */
+  margin-right: 20px;  
 }
-
-/* Estilos para os links de navegação */
+ 
 .nav-item a {
-  text-decoration: none; /* Remove sublinhado dos links */
-  color: #151378; /* Cor azul */
-  font-weight: bold; /* Deixa o texto em negrito */
-  font-size: 16px; /* Tamanho da fonte */
+  text-decoration: none;  
+  color: #151378;    
+  letter-spacing: 3px;
+  font-size: 16px;  
 }
 
-/* Estilo adicional para melhorar a aparência dos links ao passar o mouse */
+ 
 .nav-item a:hover {
-  color: #0d0d0d; /* Cor escura para o hover */
+  color: #0d0d0d;  
 }

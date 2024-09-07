@@ -1,8 +1,7 @@
 <div class="cadastro-evento-bg">
   <app-navbar></app-navbar>
-  <div class="card-1">
     <div class="cadastro-evento-container">
-      <h2>Meus evento</h2>
+      <h2>Meus eventos</h2>
       <label for="nome">Nome</label>
       <input [(ngModel)]="nome" type="text" id="nome" name="nome" required />
     
@@ -10,14 +9,20 @@
       <input [(ngModel)]="sala" type="text" id="sala" name="sala" required />
 
       <label for="horario">Horário</label>
-      <input [(ngModel)]="horario" type="datetime-local" id="horario" name="horario" required />
+      <input [(ngModel)]="horario" type="time" id="horario" name="horario" required />
+
+      <label for="horario">Dia</label>
+      <input [(ngModel)]="dia" type="date" id="dia" name="dia" required />
 
       <label for="descricao">Descrição</label>
       <input [(ngModel)]="descricao" type="text" id="descricao" name="descricao" required />
   
-      <button (click)="cadastrarevento()">Cadastrar</button>
+      <div class="button-container">
+        <button (click)="cadastrarevento()">Cadastrar</button>
+        <button (click)="cancelar()" class="warning">Cancelar</button>
+      </div>
+    
     </div>
-  </div>
 
 </div>
 

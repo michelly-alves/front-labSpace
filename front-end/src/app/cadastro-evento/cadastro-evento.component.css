@@ -1,110 +1,132 @@
 @font-face {
-    font-family:  'Poppins';
-    src: url('src/app/fontes/Poppins-Regular.woff2') format('woff2'),
-      url('src/app/fontes/Poppins-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-family: 'Gotham';
-    src: url('src/app/fontes/Gotham-black-webfont.woff2') format('woff2'),
-      url('src/app/fontes/Gotham-black-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  body {
-    font-family: 'Poppins';
-    background-color: #F7F5FA;
-  }
+  font-family: 'Poppins';
+  src: url('src/app/fontes/Poppins-Regular.woff2') format('woff2'),
+       url('src/app/fontes/Poppins-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
-  .cadastro-evento-container {
-    width: 80%;
-    max-width: 500px; 
-    padding: 20px; 
-    border: none;
-    border-radius: 8px;
-    font-family: 'Gotham';
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    z-index: 1;
-  }
+@font-face {
+  font-family: 'Gotham';
+  src: url('src/app/fontes/Gotham-black-webfont.woff2') format('woff2'),
+       url('src/app/fontes/Gotham-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family:'Gotham';
+}
+.cadastro-evento-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FDF9F6;
   
-  .cadastro-evento-container {
-      width: 50%; 
-      max-width: 525px; 
-      padding: 20px; 
-      border: none;
-      border-radius: 20px;
-      font-family: 'Popins';
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 30px;
-      z-index: 1;
-      margin-left: 400px;
-      color: #545454;
-      background-color: #ffff;
+}
 
-    
-  }
+.cadastro-evento-container {
+  width: 50%;
+  max-width: 525px;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 30px;
+  z-index: 1;
+  margin-left: 400px;
+  color: #545454;
+  background-color: #E6DBF4;
+}
 
-  h2 {
-    font-family: 'Gotham';
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 48px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #151378;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-  
-  }
-  
-  label {
-    display: block;
-    font-weight: bold;
-  }
-  
-  input[type="text"],
-  input[type="password"],
-  input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #eaeaea;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-bottom: 5px;
-    background-color: #5454541e;
-  }
-  
-  button {
-    background-color: #151378;
-    color: rgb(255, 255, 255);
-    padding: 5px 87px;
-    border: 1px solid #3f3f3f00;
-    border-radius: 15px;
-    cursor: pointer;
-    font-family: 'Gotham';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    margin-left: 80px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
-  
-  .form-container .error-message {
-    color: red;
-    margin-bottom: 10px;
-  }
+h2 {
+  font-family: 'Gotham';
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+  color: #151378;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
 
-  .cadastro-evento-bg{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+label {
+  display: block;
+  font-weight: bold;
+}
 
-  .card-1{    padding: 20px;
-  }
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="time"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #ffffff; /* Alterado para branco */
+  font-family: 'Barlow';
+  font-weight: 300;
+  font-size: 16px;
+  color: #545454;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="date"]:hover,
+input[type="time"]:hover,
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover {
+  background-color: #f5f5f5; /* Alterado para cinza claro ao passar o mouse */
+  border-color: #151378; /* Cor da borda ao passar o mouse */
+}
+
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  border-color: #151378; /* Cor da borda ao focar */
+  background-color: #ffffff; /* Mantém o fundo branco ao focar */
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="time"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(40%);
+}
+
+.warning {
+  background-color: #F40202;
+  color: #eaeaea;
+}
+.button-container{
+  display: flex;
+  justify-content: center;
+  margin-left: 70px;
+  max-width: 400px;
+}
+
+button {
+  background-color: #151378;
+  color: rgb(255, 255, 255);
+  padding: 5px 87px;
+  border: 1px solid #3f3f3f00;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: 'Gotham';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 0%;
+  letter-spacing: 0em;
+  text-align: left;
+}
