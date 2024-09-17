@@ -1,44 +1,61 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { LoginService } from '../login.service'; 
 
 interface UserDetails {
+  id: number;  
+  email: string;
+  nome: string;
   matricula: string;
-  senha: string;
+  senha?: string;
 }
+
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
-export class ProfileComponent {
-
+export class ProfileComponent implements OnInit {
+  email: string = '';
   matricula: string = '';
-  senha: string = '';
-  
-  constructor(private router: Router) {}
   usuario: UserDetails | null = null;
+
+  constructor(private router: Router, private loginService: LoginService) {}
+
   ngOnInit(): void {
+    // Obtendo o email corretamente do localStorage
     const userDetailsString = localStorage.getItem('userDetails');
-
     if (userDetailsString) {
-      this.usuario = JSON.parse(userDetailsString);
+      const userDetails = JSON.parse(userDetailsString);
+      this.email = userDetails.email || '';
     }
-  }
-  navigateToMyChampionships() {
-    this.router.navigate(['/my-championships']);
+
+    if (this.email) {
+      this.loginService.getUserByEmail(this.email).subscribe(
+        (response: UserDetails) => {
+          this.usuario = response;
+          if (this.usuario) {
+            this.matricula = this.usuario.matricula; 
+          }
+        },
+        error => {
+          console.error('Erro ao buscar os dados do usuário', error);
+        }
+      );
+    } 
   }
 
-  navigateToEditProfile() {
-    this.router.navigate(['/edit-profile']);
+  navigateToEditProfile(): void {
+    this.router.navigate(['/editar-perfil']);
   }
 
-  deleteAccount() {
+  deleteAccount(): void {
     this.router.navigate(['/login']);
   }
 
   limparLocalStorage(): void {
     localStorage.clear();
     console.log('Local Storage foi limpo!');
-    window.location.reload();
+    this.router.navigate(['/login']);
   }
 }

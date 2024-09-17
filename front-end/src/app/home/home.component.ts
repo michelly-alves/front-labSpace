@@ -15,9 +15,9 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.getCompeticoes();
   }
-  //competições do usuario logado
+  
   getCompeticoes() {
-    this.http.get<any[]>('http://localhost:8080/api/competicao/usuario')
+    this.http.get<any[]>('http://localhost:8080/api/evento')
       .subscribe(
         response => {
           this.competicoes = response;
@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
         }
       );
   }
-  //pesquisando as competições
+
   performSearch(searchTerm: string) {
     if (searchTerm) {
       this.competicoesFiltradas = this.competicoes.filter(competicao =>
@@ -38,4 +38,6 @@ export class HomeComponent implements OnInit {
       this.competicoesFiltradas = [...this.competicoes];
     }
   }
+  
+  
 }

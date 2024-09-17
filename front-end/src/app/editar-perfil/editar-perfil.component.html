@@ -1,25 +1,31 @@
-<div class="editar-perfil-bg">
-      <app-navbar></app-navbar>
-  
-    <div class="editar-perfil-card">
-      <h2>Editar Perfil</h2>
-  
-      <div class="form-group">
-        <label for="username">Usuario</label>
-        <input  type="text" id="username" name="username" required/>
-      </div>
-  
-      <div class="form-group">
-        <label for="user">Username</label>
-        <input type="text" id="user" name="user" required />
-      </div>
-  
-      <div class="form-group">
-        <label for="password">Senha</label>
-        <input  type="password" id="password" name="password" />
+<div>
+  <app-navbar></app-navbar>
+</div>
 
-        <button >Editar</button>
-      </div>
+<div class="editar-perfil-bg">
+  <div class="editar-perfil-card">
+    <h2>Editar Perfil</h2>
+
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <p>{{ email }}</p> <!-- Verifique se o e-mail está sendo exibido aqui -->
     </div>
+    
+    <div class="form-group">
+      <label for="matricula">Matrícula</label>
+      <input [(ngModel)]="matricula" type="text" id="matricula" name="matricula" required />
+    </div>
+
+    <div class="form-group">
+      <label for="password">Nova Senha</label>
+      <input [(ngModel)]="password" type="password" id="password" name="password" />
+    </div>
+
+    <div class="form-group">
+      <label for="confirmPassword">Confirme a nova senha</label>
+      <input [(ngModel)]="confirmPassword" type="password" id="confirmPassword" name="confirmPassword" />
+    </div>
+
+    <button (click)="update()">Salvar alterações</button>
   </div>
-  
+</div>

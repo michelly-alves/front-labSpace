@@ -11,11 +11,11 @@ import { StorageService } from './storage.service';
 @Injectable()
 export class HttpBasicAuthInterceptor implements HttpInterceptor {
 
-  constructor(private storage: StorageService) {}
+  constructor(private StorageService: StorageService) {}
 
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
     console.log('HttpBasicAuthInterceptor - Test');
-    const credentials = this.storage.get('authorization');
+    const credentials = this.StorageService.get('authorization');
    
     if(credentials){
       console.log('HttpBasicAuthInterceptor - credentials: ' + credentials);

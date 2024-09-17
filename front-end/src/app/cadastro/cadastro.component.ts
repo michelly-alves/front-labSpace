@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./cadastro.component.css']
 })
 export class CadastroComponent {
+  nome: string = '';
   matricula: string = '';
   email: string = '';
   password: string = '';
@@ -32,22 +33,24 @@ export class CadastroComponent {
       alert("Você precisa selecionar se é Aluno ou Professor.");
       return;
     }
-//atributos p mandar pro back: this.o que tava no html
-    const user = {
-      matricula: this.matricula,
-      senha: this.password,
-      email: this.email
-    };
+    
+const user = {
+  nome: this.nome,
+  matricula: this.matricula,
+  senha: this.password,
+  email: this.email
+};
 
-    this.http.post('http://localhost:8080/api/usuario/register', user)
-      .subscribe(
-        response => {
-          console.log('Cadastro realizado com sucesso', response);
-          this.router.navigate(['/login']);
-        },
-        error => {
-          console.error('Erro ao cadastrar usuário', error);
-        }
-      );
+this.http.post('http://localhost:8080/api/aluno', user)
+.subscribe(
+  response => {
+    console.log('Cadastro realizado com sucesso', response);
+    this.router.navigate(['/login']);
+  },
+  error => {
+    console.error('Erro ao cadastrar usuário', error);
+    alert('Erro ao cadastrar: ' + error.message);
   }
+);
+}
 }

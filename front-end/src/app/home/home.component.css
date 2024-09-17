@@ -70,3 +70,24 @@ a {
   color: #ffffff;  
   font-weight: bold;
 }
+.evento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px; 
+ 
+  padding: 20px; 
+}
+
+.evento-card {
+  background-color: #D3E8D8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  text-align: justify;
+}
+
+.eventos-name {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333; 
+}

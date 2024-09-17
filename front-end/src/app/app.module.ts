@@ -29,6 +29,7 @@ import { ProfileComponent } from './profile/profile.component';
 
   ],
   declarations: [
+    
     AppComponent,
     LoginComponent,
     CadastroComponent,

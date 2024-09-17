@@ -26,9 +26,9 @@ export class CadastroEventoComponent {
     const evento = {
       nome: this.nome,
       descricao: this.descricao,
-      horario: this.horario, 
-      dia: this.dia,
-      sala: this.sala        
+      local: this.sala,
+      data: this.dia,  
+      hora: this.horario
     };
 
     this.http.post('http://localhost:8080/api/evento', evento)
@@ -36,7 +36,7 @@ export class CadastroEventoComponent {
         (response: any) => {
           console.log('Evento cadastrado com sucesso', response);
           const idCompeticao = response.id;
-          this.router.navigate(['/home', idCompeticao]);
+          this.router.navigate(['/home']);
         },
         error => {
           console.error('Erro ao cadastrar evento', error);

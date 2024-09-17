@@ -8,8 +8,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 
-
-
 export class NavbarComponent {
   constructor(private router: Router, private http: HttpClient) {}
   LabSpace(){

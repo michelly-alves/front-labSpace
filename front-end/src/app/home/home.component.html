@@ -12,10 +12,13 @@
   <br>
   
 <div class="evento-grid">
-  <div class="evento-card" *ngFor="let evento of competicoes">
+  <div class="evento-card" *ngFor="let competicao of competicoes">
     <div class="evento-detalhe">
-      <div class="eventos-name">{{evento.nome }}</div>
-      
+      <div class="eventos-name"> Nome: {{competicao.nome }}</div>
+      <div class="eventos-name">Descrição: {{competicao.descricao }}</div>
+      <div class="eventos-name">Hora: {{competicao.hora }}</div>
+      <div class="eventos-name">Local: {{competicao.local }}</div>
+      <div class="eventos-name">Data: {{competicao.data }}</div>
     </div>
   </div>
 </div>

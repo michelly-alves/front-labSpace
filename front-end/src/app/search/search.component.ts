@@ -10,6 +10,6 @@ export class SearchComponent {
   @Output() searchEvent = new EventEmitter<string>();
 
   search() {
-    this.searchEvent.emit(this.searchTerm);
-  }
+    this.searchEvent.emit(this.searchTerm); 
+}
 }
